@@ -5,10 +5,9 @@
   "private": true,
   "scripts": {
     "dev": "astro dev",
-    "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "start": "node dist/server/entry.mjs --verbose"
   },
   "dependencies": {
     "@astrojs/node": "^3.1.0",

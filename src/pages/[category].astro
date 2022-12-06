@@ -1,5 +1,9 @@
 ---
-  const { category } = Astro.params;
+const { category } = Astro.params
+
+if (!category) {
+  Astro.redirect('/404')
+}
 ---
 
 <div>
